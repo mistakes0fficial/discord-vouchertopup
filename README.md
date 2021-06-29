@@ -1,11 +1,13 @@
-### Prerequisites
+# Discord VoucherTopup
+
+## Prerequisites
 This is an example of how to list things you need to use the software and how to install them.
 * Yarn
   ```sh
   npm install yarn
   ```
 
-### Installation
+## Installation
 1. Get a Discord bot Token Key at [Discord Developer Portal](https://discord.com/developers/applications)
 2. Clone the repo
     ```sh
