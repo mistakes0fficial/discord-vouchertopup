@@ -25,6 +25,13 @@ This is an example of how to list things you need to use the software and how to
     WALLET_NUMBER=0123456789
     ```
     
+## How to run
+1. Open cmd or bash.
+2. Running a app
+    ```sh
+    node app.js
+    ```
+    
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
