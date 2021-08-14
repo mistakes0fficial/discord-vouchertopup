@@ -3,10 +3,7 @@ For supporting contact via [Discord](https://discord.deartanakorn.com) in #suppo
 
 ## Prerequisites
 This is an example of how to list things you need to use the software and how to install them.
-* Yarn
-  ```sh
-  npm install yarn
-  ```
+* Node.js 12.0.0 or newer is required.
 
 ## Installation
 1. Get a Discord bot Token Key at [Discord Developer Portal](https://discord.com/developers/applications)
@@ -14,9 +11,9 @@ This is an example of how to list things you need to use the software and how to
     ```sh
     git clone https://github.com/DearTanakorn/discord-vouchertopup.git
     ```
-3. Install Yarn packages
+3. Install requirement packages
     ```sh
-    yarn install
+    npm install
     ```
 4. Copy '.env.example' to '.env'
 5. Enter your Discord bot Token Key in `.env`
