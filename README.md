@@ -1,4 +1,5 @@
 # Discord VoucherTopup
+For supporting contact via [Discord](https://discord.deartanakorn.com) in #support channel ❤
 
 ## Prerequisites
 This is an example of how to list things you need to use the software and how to install them.
