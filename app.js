@@ -6,8 +6,6 @@ const cooldown = new Set();
 const truewalletapi = require('./lib/TrueWallet');
 const wallet = new truewalletapi(process.env.WALLET_NUMBER);
 
-const axios = require('axios');
-
 client.login(process.env.TOKEN);
 
 client.on('ready', () => {
@@ -48,7 +46,7 @@ client.on('message', (message) => {
       try {
         let response = await wallet.redeem(args[0]);
         
-        return m.edit(successEmbed(`<@${message.author.id}> สำเร็จ ✅ จำนวนเงิน ${response.data.voucher.amount_baht}`));
+        return m.edit(successEmbed(`<@${message.author.id}> สำเร็จ ✅ จำนวนเงิน ${response.data.my_ticket.amount_baht}`));
       } catch (err) {
         if (err.status === 400 || err.status === 404) return m.edit(errorEmbed('Link ไม่ถูกต้อง อาจจะถูกใช้ไปแล้วหรือหมดอายุ ❌')).then((msg) => msg.delete({ timeout: 5000 }));
         
