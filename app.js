@@ -5,10 +5,11 @@ const client = new Discord.Client();
 const cooldown = new Set();
 const truewalletapi = require('./lib/TrueWallet');
 const wallet = new truewalletapi(process.env.WALLET_NUMBER);
+const TOKEN = process.env.TOKEN;
 const COOLDOWN_TIME = 5000;
 
 
-client.login(process.env.TOKEN);
+client.login(TOKEN);
 
 client.on('ready', () => {
   client.user.setActivity('with ❤ by DearTanakorn#0154', { type: 'PLAYING' });
